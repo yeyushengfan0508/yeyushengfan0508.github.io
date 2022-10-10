@@ -1,9 +1,9 @@
 # Site settings
 title: 夜雨声烦
 SEOTitle: 夜雨声烦 | TroublingRain
-header-img: img/home-bg.jpg
+header-img: img/archive-bg.jpeg
 email: yangqin17@mails.ucas.ac.cn
-description: "这里是 杨溱 的个人博客，todo"
+description: "这里是杨溱的个人博客"
 keyword: "夜雨声烦"
 url: "https://huangxuan.me" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
