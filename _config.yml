@@ -1,11 +1,11 @@
 # Site settings
 title: 夜雨声烦
 SEOTitle: 夜雨声烦 | TroublingRain
-header-img: img/archive-bg.jpeg
+header-img: img/dusk_rain.png
 email: yangqin17@mails.ucas.ac.cn
 description: "这里是杨溱的个人博客"
 keyword: "夜雨声烦"
-url: "https://huangxuan.me" # your host, for absolute URL
+url: "https://yeyushengfan.com" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -59,7 +59,7 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: hux
+disqus_username: yeyushengfan
 
 # Netease settings
 netease_comment: false
@@ -69,12 +69,13 @@ netease_comment: false
 # ba_track_id: [your track id]
 
 # Google Analytics
-ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+# ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
+# ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "千秋邈矣独留我 <br> 百战归来再读书"
+#sidebar-about-description: "千秋邈矣独留我 <br> 百战归来再读书"
+sidebar-about-description: "我想和无拘无束的人去什么都没有的地方"
 sidebar-avatar: img/me.JPG # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
@@ -91,6 +92,6 @@ page-mathjax: false
 # Friends
 friends:
   [
-    { title: "张皓天", href: "http://hosheazhang.com/" },
-    { title: "葛超", href: "https://ivoripuion.github.io/" },
+    { title: "东大霍华德", href: "http://hosheazhang.com/" },
+    { title: "深圳时王", href: "https://ivoripuion.github.io/" },
   ]
