@@ -76,11 +76,11 @@ netease_comment: false
 sidebar: true # whether or not using Sidebar.
 #sidebar-about-description: "千秋邈矣独留我 <br> 百战归来再读书"
 sidebar-about-description: "我想和无拘无束的人 <br> 去什么都没有的地方"
-sidebar-avatar: img/me.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: https://tva1.sinaimg.cn/large/008vxvgGgy1h72lgxftg8j31410u0dka.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags
-featured-condition-size: 1 # A tag will be featured if the size of it is more than this condition value
+featured-condition-size: 0 # A tag will be featured if the size of it is more than this condition value
 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
