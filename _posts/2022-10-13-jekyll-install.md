@@ -39,12 +39,20 @@ chruby 3.1.2
 然后顺利安装了**jekyll**和**bundler gems**，运行下述指令：
 
 ```shell
-# Build the site and make it available on a local server.
+# Build the site and make it available on a local server.[from Quickstart]
+# Github Pages官网推荐使用Bundler运行Jekyll
 bundle exec jekyll serve
+
+# 同时推荐使用该指令
+# Pass the --livereload option to serve to automatically refresh the page with each change you make to the source files
+bundle exec jekyll serve --livereload
 ```
 
 但是出现了一些报错，是由于缺失一些依赖包，运行 `bundle install`下载，这次成功运行了！
 
-打开[https://127.0.0.1:4000]()，成功展现网页：
+打开[https://127.0.0.1:4000](https://127.0.0.1:4000)，成功展现网页：
 
 ![](/img/截屏2022-10-13%2014.26.02.png)
+
+
+
