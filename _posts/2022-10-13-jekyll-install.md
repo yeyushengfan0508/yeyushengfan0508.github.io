@@ -4,6 +4,7 @@ title:        "安装jekyll"
 subtitle:     "过程的一些记录"
 author:       "夜雨声烦"
 header-img:   img/night-car.png
+header-mask:  0
 catalog:      true
 tags:
     - ruby
@@ -53,6 +54,3 @@ bundle exec jekyll serve --livereload
 打开[https://127.0.0.1:4000](https://127.0.0.1:4000)，成功展现网页：
 
 ![](/img/截屏2022-10-13%2014.26.02.png)
-
-
-
