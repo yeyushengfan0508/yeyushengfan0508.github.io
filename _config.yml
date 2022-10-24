@@ -75,7 +75,7 @@ netease_comment: false
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
 #sidebar-about-description: "千秋邈矣独留我 <br> 百战归来再读书"
-sidebar-about-description: "我想和无拘无束的人 <br> 去什么都没有的地方"
+sidebar-about-description: "啥也不是"
 sidebar-avatar: https://github.com/yeyushengfan0508.png # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
