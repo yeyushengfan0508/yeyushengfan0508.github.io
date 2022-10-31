@@ -40,7 +40,7 @@ disqus_username: yeyushengfan
 
 ![](/img/截屏2022-10-14%2017.10.29.png)
 
-同时在Github的`yeyushengfan0508.github.io`仓库下，找到`Settings->Pages`，关联自己的域名，并勾选只能通过自定义域名访问。
+同时在Github的 `yeyushengfan0508.github.io`仓库下，找到 `Settings->Pages`，关联自己的域名，并勾选只能通过自定义域名访问。
 
 ![](/img/截屏2022-10-14%2017.14.08.png)
 
@@ -56,10 +56,37 @@ disqus_username: yeyushengfan
 
 ![](/img/截屏2022-10-16%2000.30.31.png)
 
-查看代码说明，由于jekyll不对Google提供原生支持，所以进行手动添加。我将这段代码加在了`/_include/head.html`里的`<head>`元素之后。
+查看代码说明，由于jekyll不对Google提供原生支持，所以进行手动添加。我将这段代码加在了 `/_include/head.html`里的 `<head>`元素之后。
 
 ![](/img/截屏2022-10-16%2000.32.30.png)
 
 谷歌分析开始收集数据流并显示：
 
 ![](/img/截屏2022-10-16%2000.37.45.png)
+
+# 通过Mathjax添加数学公式支持[10.25]
+
+理论上原博客仓库是支持数学公式编辑的，最近要记录学习内容的时候才发现有问题。查看了一下这部分的代码，不得不吐槽一下确实是很久不维护了，逻辑也有一定问题。查看文档发现Mathjax也已经从 `v2`全面升级到 `v3`，之前的代码基本是不能用了，因此决定完全舍弃。
+
+根据[Mathjax官方文档](https://docs.mathjax.org/en/latest/web/configuration.html)，将如下代码复制到 `_includes/mathjax_support.html`：
+
+```html
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    tags: 'ams'
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+```
+
+然后在 `/_layouts/post.html`和 `page.html`中`include`这个文件。
+
+再渲染可以成功显示公式，后续需要时再添加其他支持。

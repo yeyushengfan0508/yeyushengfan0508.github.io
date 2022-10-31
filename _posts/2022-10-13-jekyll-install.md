@@ -54,3 +54,25 @@ bundle exec jekyll serve --livereload
 打开[https://127.0.0.1:4000](https://127.0.0.1:4000)，成功展现网页：
 
 ![](/img/截屏2022-10-13%2014.26.02.png)
+
+# 10月25日更新
+
+虽然之前已经将下列语句加入到 `~/.zshrc`中：
+
+```shell
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+# To enable auto-switching of Rubies specified by .ruby-version files
+source /usr/local/opt/chruby/share/chruby/auto.sh
+```
+
+但是每次打开终端发现并没有自动切换到 `ruby-3.1.2`，去[Github](https://github.com/postmodern/chruby)上查看发现是没有创建`.ruby-version`文件：
+
+![](/img/截屏2022-10-25%2013.45.31.png)
+
+在终端输入指令：
+
+```shell
+echo "ruby-3.1.2" > ~/.ruby-version
+```
+
+重新打开终端发现已自动切换。
