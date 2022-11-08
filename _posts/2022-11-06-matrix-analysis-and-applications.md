@@ -1,0 +1,44 @@
+---
+layout: post
+title: "Matrix Analysis and Applications"
+subtitle: "This is a subtitle"
+date: 2022-11-06
+author: "夜雨声烦"
+header-img: "img/bg2.png"
+header-mask: 0.2
+catalog: true
+tags: []
+---
+
+# Chapter 5 Norms, Inner Products and Orthogonality
+
+## 5.1 Vector Norms
+
+#### Euclidean Vector Norm
+
+For a vector $x_{n \times 1}$, the ***euclidean norm*** of $x$ is defined to be:
+
+* $ \lVert x \rVert = \left( \sum_{i=1}^n x_i^2 \right)^{\frac{1}{2}} = \sqrt{x^T x} \quad      \text{whenever} \\ \\  x \in \mathfrak{R}^{n \times 1} $
+* $ \lVert x \rVert = \left( \sum_{i=1}^n \lvert x_i \rvert^2 \right)^{\frac{1}{2}} = \sqrt{x^* x} \quad \text{whenever} \\ \\  x \in \mathfrak{C}^{n \times 1} $
+
+Several points to note:
+
+1. Recall that if $z = a + \mathrm{i}b$, then $\bar{z} = a − \mathrm{i}b $, and the magnitude of $z$ is $\lvert z \rvert = \sqrt{z\bar{z}} = \sqrt{a^2 + b^2}$.
+2. The definition of euclidean norm guarantees that for all scalars $\alpha$,
+    * $\lVert x \rVert \geq 0 $
+    * $\lVert x \rVert = 0 \Longleftrightarrow x = 0 $
+    * $\lVert \alpha x \rVert = \lvert \alpha \rvert \lVert x \rVert $
+      
+3. Given a vector $x \neq 0$, we ***normalize*** $x$ by setting $u = \frac{x}{\lVert x \rVert}$ to have another vector that points in the same direction as $x$, it's easy to see that
+
+$$ \lVert u \rVert = \lVert \frac{x}{\lVert x \rVert} \rVert = \frac{1}{\lVert x \rVert} \lVert x \rVert = 1 $$
+
+4. For vectors in $\mathfrak{R}^n$ and $\mathfrak{C}^n$, the ***distance*** between $u$ and $v$ is naturally defined to be $\lVert u - v \rVert$.
+
+#### Standard Inner Product
+
+The scalar terms defined by
+
+$$x^T y = \sum_{i=1}^n x_i y_i \in \mathfrak{R} \quad \text{and} \quad x^* y \sum_{i=1}^n \bar{x_i} y_i \in \mathfrak{C}$$
+
+are called the ***standard inner products*** for $\mathfrak{R}^n$ and $\mathfrak{C}^n$, respectively.
